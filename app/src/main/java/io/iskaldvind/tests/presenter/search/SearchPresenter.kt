@@ -14,7 +14,7 @@ import retrofit2.Response
  * выступая в роли регулировщика движения на перекрестке.
  */
 
-internal class SearchPresenter internal constructor(
+class SearchPresenter(
     private val viewContract: ViewSearchContract,
     private val repository: GitHubRepository
 ) : PresenterSearchContract, GitHubRepositoryCallback {

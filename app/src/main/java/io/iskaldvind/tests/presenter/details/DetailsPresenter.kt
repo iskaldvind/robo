@@ -2,7 +2,7 @@ package io.iskaldvind.tests.presenter.details
 
 import io.iskaldvind.tests.view.details.ViewDetailsContract
 
-internal class DetailsPresenter internal constructor(
+class DetailsPresenter(
     private val viewContract: ViewDetailsContract,
     private var count: Int = 0
 ) : PresenterDetailsContract {
